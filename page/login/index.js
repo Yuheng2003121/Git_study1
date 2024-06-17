@@ -34,7 +34,7 @@ document.querySelector('.btn').addEventListener('click', () => {
     localStorage.setItem('token', result.data.token)
     setTimeout(() => {
       // 延迟跳转，让 alert 警告框停留一会儿
-      location.href = '../content/index.html'
+      location.href = './content/index.html'
     }, 1500)
   }).catch(error => {
     myAlert(false, error.response.data.message)
